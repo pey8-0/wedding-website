@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
+    "url": "git+ssh://git@github.com/rampatra/wedding-website.git"
   },
   "keywords": [
     "wedding",
@@ -29,5 +29,8 @@
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
     "waypoints": "^4.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/rampatra/wedding-website/issues"
   }
 }
