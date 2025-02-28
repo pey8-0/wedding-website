@@ -2,7 +2,8 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
-var uglify = require('gulp-uglify');
+//var uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 var rename = require('gulp-rename');
 
 // compile scss to css
@@ -21,7 +22,7 @@ gulp.task('sass:watch', function () {
 // minify js
 gulp.task('minify-js', function () {
     return gulp.src('./js/scripts.js')
-        .pipe(uglify())
+        .pipe(terser())
         .pipe(rename({basename: 'scripts.min'}))
         .pipe(gulp.dest('./js'));
 });
