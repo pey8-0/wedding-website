@@ -148,23 +148,7 @@ Animations
     transform: translate(-50%, 0)
   }
 }
-.floating-logo {
-  animation-name: floating-logo;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes floating-logo {
-  from {
-    transform: translate(-50%, 0)
-  }
-  50% {
-    transform: translate(-50%, 10px)
-  }
-  to {
-    transform: translate(-50%, 0)
-  }
-}
+
 
 /* ==========================================================================
 Waypoinsts
@@ -275,21 +259,45 @@ Hero
   }
   .center{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     justify-self: flex-end;
     padding-bottom:40px;
+    width:80%;
+    position:absolute;
+    left: 10%; 
+    top:50%;
   }
+
+  .info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
+  }
+
+  .info p{
+    padding:0 !important;
+    margin-bottom: 5px !important;
+    text-align: center;
+  }
+
+  .info h2{
+    text-align: center;
+  }
+
 
   .flex{
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
   }
   .down-arrow a {
     color: $txt-light;
+  
   }
   h1 {
     margin-bottom: 40px;
+    text-align: center;
   }
   p.intro {
     color: $txt-light;
@@ -300,30 +308,40 @@ Hero
   .hero-content {
     height: 100vh;
     width: 40%; 
+    position:relative;
+    padding-top: 20px;
   }
 
 .header{
-  max-height: 750px;
+  height: 100vh;
   background: #4F6757;
   display:flex;
+  overflow:hidden;
 }
 .header-img {
   width: 60%;  
     object-fit: cover; 
-    height: auto;
     margin-right:20px;
+  height: 100vh;
+  background-image: url("/img/header1200.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 .fancy{
   font-family: 'Andellia Davilton', sans-serif;
   color: #FAF3E9;
-  font-size:5em;
+  font-size:4em;
   transform: rotate(-8deg);  
     transform-origin: center;
+  text-align: center;
+  width:90%;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
+  width:100vw;
 }
 
 .down-arrow {
@@ -333,6 +351,10 @@ Hero
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  background: black; 
+  border-radius: 50%;
+  width:45px;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -417,26 +439,35 @@ Hero
   padding: 14px;
   width: 100%;
   text-align: left;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   outline: none;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  background-color: $accent-color;
+  background-color: $accent-color !important;
   
   overflow: hidden;
   word-wrap: break-all;
+  display:flex;
+  flex-direction: row;
 
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 
 .accordion-button:hover {
-  background-color: $black-color;
+  background-color: $black-color !important;
+  color:#DE6C7F !important;
+}
+
+.accordion-button h3{
+  color: #000;
 }
 
 /* Hide the content by default */
 .accordion-content {
   padding: 0 18px;
-  display: none;
   overflow: hidden;
 }
 
