@@ -7,9 +7,10 @@
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Peyton & Kieren</title>
     <meta name="description" content="We're eloping.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,12 +19,14 @@
     <meta property="og:description" content="We're eloping">
     <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
     <meta property="og:type" content="website">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'  https://www.gstatic.com https://apis.google.com/; object-src 'none';"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
+    <script src="./app.js"></script>
     <script>
         // load css files from CDN if local node_modules fail
         function loadCssFromCDN(css) {
@@ -49,6 +52,8 @@
             }
         }
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -57,58 +62,121 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
 </head>
+
 <body id="top">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<section>
-    <div class="header">
-        <div >
-            <div class="wrapper">
-                <img class="header-img" src="img/IMG_7226.JPG" alt="peyton and kieren running through a field"/>
-                <div class="hero-content flex">
-                    <div>
-                        <h1>PEYTON & KIEREN</h1> 
-                <p class="fancy">We're eloping</p> 
-                
-                </div>
-                
+    <section>
+        <div class="header">
+            <div>
+                <div class="wrapper">
+                    <div class="header-img w-60"></div>
                     
-            </div>
-            <div class="down-arrow floating-arrow"><a href="#details"><i class="fa fa-angle-down"></i></a></div>
-        </div>
-    
-</section>
-<section id="details" class="section-padding">
-    <h2>POST ELOPEMENT CELEBRATION</h2>
-<p> We are eloping in Tasmania. Although we will be quietly saying our vows in a small, private ceremony, we want you to know that we are planning a post-elopement celebration to share our joy with all of you! We are beyond excited to celebrate this new chapter of our lives with the people we love and who have supported us along the way.</p>
-<p> Please add a placeholder for our dinner event on Sunday, October 1st 2028 to your calendar. A formal invitation will be sent with more information closer to the date</p>
-<h3> WHAT SHOULD I EXPECT?</h3>
-<p>Similar to how a reception usually follows a wedding ceremony but a more casual version. We will be hosting a dinner in a pretty space to eat, drink and hang out with our closest family and friends.</p>
+                    <div class="hero-content flex">
+                        <div>
+                            <h1>PEYTON & KIEREN</h1>
+                            <p class="fancy">We're eloping</p>
 
-  </section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Peyton with lots of help from the internet.</p>
+                        </div>
+                        
+                        <div class="center"><div class="info"><h2>POST ELOPEMENT CELEBRATION</h2>
+                            <p>THE HILLS OF RIVER MAKERS</p>
+                            <p>01.10.2028</p></div>
+                        <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="down-arrow floating-arrow"><a href="#details"><i class="fa fa-angle-down"></i></a></div>
+            </div>
+
+    </section>
+    <section id="timeline" class="section-padding timeline">
+        <h2> P AND K OVER THE YEARS</h2>
+        <div><h3> The first meeting - 28/03/2015</h3>
+        <p> We met at a house party. Peyton and Scott used to work together at Bunnings, and it turned out that Scott is childhood friends with Kieren. Scott brought him along to another work friend's 21st birthday. Peyton and Kieren immediately hit it off. </p>
+        </div>
+        <div>
+            <h3> The first date - </h3>
+            <p> After Peyton sent a friend request to Kieren on facebook the day after the party, Kieren made the next move to organise a lunch date. We went to Sushi Train at Cairns Central for lunch on a random Wednesday. Peyton was late because she was coming from a shift at Bunnings and thought Kieren had left, but he was running errands while he waited for her. It was only after, that Kieren mentioned he doesn't really like sushi.</p>
+        </div>
+        <div>
+            <h3>We made it official - 28/04/2015</h3>
+            <p>Kieren asked Peyton to be his girlfriend after 3 or 4 dates to Ganburanba and then ice cream. </p>
+        </div>
+        <div>
+            <h3> The first meeting of the families</h3>
+            <p> With a pending move on the cards, both sides wanted to see what their child had gotten themselves into. A big family dinner was held at Cazaly's in Cairns to introduce the parents and siblings who still lived in Cairns. Both Kieren and Peyton had met the other's families seperately before this.</p>
+        </div>
+        <div>
+            <h3>Moved to Canberra together - 30/01/2016</h3>
+            <p>Peyton had accepted a job offer in the Federal Government IT Graduate program only two months into dating. Much to everyone's suprise, Kieren said he would join Peyton in moving to Canberra over text a couple months after she told him about her accepting the job.</p>
+        </div>
+        <div> 
+            <h3>The first pet - /09/2017</h3>
+            <p> After lots of begging and grovelling to both the real estate and Kieren, we adopted a 9 week old kitten in Cairns that we called Charlie.</p>
+        </div>
+        <div>
+            <h3>The first overseas holiday together - Canada 03/2018</h3>
+            <p>A big trip to go visit Kieren's older brother, Wes and his wife Michelle in Vancouver! Peyton also got to meet Michelle's family.</p>
+        </div>
+        <div>
+            <h3> Moved to Brisbane 01/12/2018</h3>
+            <p> After almost 3 years in Canberra, the cold was too much and we made to move back to warmer climates. After a stupidly long drive up from Canberra, we moved into our second apartment together in Morningside, Brisbane.</p>
+        </div>
+        <div>
+            <h3>Bought a house! 02/10/2020</h3>
+            <p> To add to the chaos of everything that 2020 was, Peyton's parents helped us buy a house of our own. After dealing with way too many real estate agents. We bought a house in Wynnum, Brisbane.</p>
+        </div>
+        <div>
+            <h3>The pet gang expands rapidly - 07/10/2020, ADD RIVER AND WILBY DATES</h3>
+            <p> After buying our house, we went into full pet crazy mode. Gaining another 3 pets in under 1.5 years. ADD NOTES ON GETTING THE PETS </p>
+        </div>
+        <div>
+            <h3>The first multi-day hike together - September 2023</h3>
+            <p>After completing Thoresbourne Trail with some friends earlier in the year, Peyton begged Kieren to do another one with her. After much investigation, she found the Three Capes Track that starts from Port Arthur, Tasmania that had cabins every night which finally got Kieren onboard. ADD SOME DETAILS></p>
+        </div>
+        <div>
+            <h3>He put a ring on it - 28/09/2024</h3>
+            <p>13 months after they agreed to get engaged, on a trip to the Toowoomba Flower Festival, Kieren pulled Peyton into a quiet garden area and proposed with a little speech, a family hierloom ring and a cheeky smile.</p>
+            <p>Also, if anyone is doing the maths, yes 9.5 years is correct.</p>
+            <h4>About the ring</h4>
+            <p>The ring was passed down from Peyton's Great Great Great Aunt Maude Dunne (yes three greats) who was married on December 9 1916. Aunt Maude and her husband Harold never had any children so it slowly made it's way down the family via Peyton's maternal grandmother. When Peyton and Kieren agreed on getting engaged, Peyton asked her parents if we could have it, and they agreed. </p>
+        </div>
+        <div>
+            <h3>They say 'I Do'- September 2028</h3>
+            <p>Peyton and Kieren are eloping in Cradle Mountain, Tasmania in an intimate ceremony, just the two of them. The actual date is top secret, because we don't trust some of y'all not to rock up. Maybe we will tell you at the Post Elopement Celebration.</p>
+        </div>
+        <div>
+            <h3>Post Elopement Celebration - 01/10/2028</h3>
+            <p>We cannot wait to celebrate with you all! </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>Crafted by Peyton with lots of help from the internet.</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-
+    </footer>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
 </body>
+
 </html>
