@@ -672,29 +672,3 @@ body.modal-open {
 .modalClose {
   color: #faf3e9 !important;
 }
- /* Container to hold all the divs */
- .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;  /* Space between divs */
-    align-items: center;
-    height: 100vh;
-}
-
-/* Default style for all divs */
-.timeline div {
-    width: 50%;  /* Divs will take 50% of the container width */
-    height: 100px;  /* Fixed height for each div */
-    background-color: lightblue;
-    transition: transform 0.5s ease;  /* Smooth transition */
-}
-
-/* Apply the transform for the odd-numbered divs (0-based index, 1st, 3rd, etc.) */
-.timeline div:nth-child(odd) {
-    transform: translateX(-50%);  /* Move to the left */
-}
-
-/* Apply the transform for the even-numbered divs (2nd, 4th, etc.) */
-.timeline div:nth-child(even) {
-    transform: translateX(50%);  /* Move to the right */
-}
