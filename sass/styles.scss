@@ -586,7 +586,7 @@ Footer
 ========================================================================== */
 footer {
   background: #4F6757; //add a variable for this!!!!
-  .content {
+  .footer-content {
     border-top: 1px solid $keyline-color;
     padding-bottom: 20px;
     
@@ -640,4 +640,74 @@ body.modal-open {
 
 .modalClose{
   color:#FAF3E9 !important; //var for colour
+}
+
+
+/* ==========================================================================
+Timeline
+========================================================================== */
+
+.timeline {
+  position: relative;
+  padding-top: 20px;
+  background-color: #4F6757; //add a var!
+}
+
+
+.box{
+  padding: 20px 0px;
+  position: relative;
+}
+
+.left{
+  left:0;
+}
+
+.right{
+  left: 50%;
+}
+
+.timeline-container::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 99%;
+  background: #FAF3E9;
+  top:60px;
+  left: 50%;
+  margin-left: -3px;
+
+}
+
+.marker{
+  position:absolute;
+  right:47.5%;
+  top:15px;
+  z-index:10;
+  fill:#FAF3E9;
+}
+
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.content img {
+  max-width: 50%;
+  max-height: 80%;
+  padding: 20px;
+}
+
+.content div{
+  padding: 20px;
+  max-width: 400px;
+}
+
+.pets{
+  display:flex;
+  flex-direction: column;
 }
