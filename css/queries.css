@@ -13,6 +13,7 @@
 
 /* Responsive nav kicks in */
 @media screen and (max-width: 991px) {
+
     header {
         width: 90%;
         padding-left: 25px;
@@ -56,17 +57,11 @@
 
     nav ul li a {
         color: #fff;
-        font-size: 25px;
         text-transform: uppercase;
-        font-weight: 600;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
         -webkit-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out
-    }
-
-    nav ul li {
-        margin-bottom: 25px
     }
 
     nav ul.primary-nav li {
@@ -240,6 +235,14 @@
     footer .footer-links {
         margin: 120px 0 120px 0;
     }
+
+    .marker{
+        right:48%;
+    }
+
+    .timeline-container::after{
+        height: 98.5%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -339,9 +342,69 @@
         padding-bottom: 0;
     }
 
-    .down-arrow {
-        display: none;
+    .fancy{
+        font-size: 2em;
     }
+    h1{
+        font-size: 1.25em;
+        margin-bottom:10px;
+    }
+    .info p{
+        line-height: 15px;
+    }
+    .header{
+        height:400px;
+    }
+    .header-img{
+        height:400px;
+    }
+    .hero-content{
+        padding:0;
+    }
+    .timeline-container::after{
+        display:none;
+    }
+    .marker{
+        display:none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content img{
+        max-width:100%;
+    }
+    .content div{
+        max-width:100%;
+        padding: 0px
+    }
+
+    .content.right{
+        flex-direction: column;
+    }
+    .timeline p {
+        padding: 30px;
+    }
+    .box{
+        padding:30px;
+    }
+    .box p {
+        padding:0;
+    }
+    .down-arrow{
+
+        bottom: -90px;
+    }
+    .menu-wrapper a{
+        font-size: 10px;
+    }
+    .rsvp .rsvp-form .form-input-group {
+        height: 100%;
+        display:flex;
+        flex-direction: column; 
+        gap:10px;
+        margin-bottom: 10px;
+    }
+    
 
 }
 
@@ -352,5 +415,76 @@
 
     .rsvp {
         padding-top: 20px;
+    }
+
+    .header{
+        height: 550px;
+
+    }
+    .down-arrow{
+        bottom: -15px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .header-img{
+        width:100%;
+        margin-right: 0px;
+        height: 100vh;
+        background-image: url("/img/header800.jpg");
+        background-position: center;
+    }
+    .hero-content{
+        height:400px;
+        width: 100%;
+    }
+    .fancy{
+        font-size: 2em;
+    }
+    h1{
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+    .timeline-container::after{
+        display:none;
+    }
+    .marker{
+        display:none;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content img{
+        max-width:100%;
+    }
+    .content div{
+        max-width:100%;
+    }
+
+    .content.right{
+        flex-direction: column;
+    }
+    .timeline p {
+        padding: 10px;
+    }
+    .box{
+        padding:10px;
+    }
+    .timeline h2{
+        padding: 10px;
+
+    }
+    .hero-content {
+        height:100%;
+    }
+    .info h2{
+        padding-top:40px;
+    }
+    .down-arrow{
+        display:none;
+    }
+    .rsvp-form p {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
