@@ -7,17 +7,19 @@
 <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Peyton & Kieren</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Save the date - Peyton & Kieren</title>
     <meta name="description" content="We're eloping.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Peyton & Kieren">
+    <meta property="og:title" content="Home - Peyton & Kieren">
     <meta property="og:description" content="We're eloping">
     <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
     <meta property="og:type" content="website">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'  https://www.gstatic.com https://apis.google.com/; object-src 'none';"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -42,10 +44,14 @@
 
         // load js files from CDN if local node_modules fail
         function loadJsFromCDN(js) {
-         if (js === 'jquery.js') {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
                 document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
             }
         }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -55,58 +61,97 @@
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
 </head>
+
 <body id="top">
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-
-<section>
-    <div class="header">
-        <div >
-            <div class="wrapper">
-                <div class="header-img"></div>
-                <div class="hero-content flex">
-                    <div>
-                        <h1>PEYTON & KIEREN</h1> 
-                <p class="fancy">We're eloping</p> 
-                
-                </div>
-                
+<nav class="menu">
+  <ul class="menu-wrapper">
+    <li class="home"><a href="/index.html">Home</a></li>
+    <li class="other"><a href="/save-the-date.html">Save the date</a></li>
+    <!-- <li class="other hide"><a href="/invite.html">Invites</a></li> -->
+  </ul>
+</nav>
+    <section>
+        <div class="header">
+            <div>
+                <div class="wrapper">
+                    <div class="header-img w-60"></div>
                     
-            </div>
-            <div class="down-arrow floating-arrow"><a href="#details"><i class="fa fa-angle-down"></i></a></div>
-        </div>
-    
-</section>
-<section id="details" class="section-padding">
-    <h2>POST ELOPEMENT CELEBRATION</h2>
-<p> We are eloping in Tasmania. Although we will be quietly saying our vows in a small, private ceremony, we want you to know that we are planning a post-elopement celebration to share our joy with all of you! We are beyond excited to celebrate this new chapter of our lives with the people we love and who have supported us along the way.</p>
-<p> Please add a placeholder for our dinner event on Sunday, October 1st 2028 to your calendar. A formal invitation will be sent with more information closer to the date</p>
-<h3> WHAT SHOULD I EXPECT?</h3>
-<p>Similar to how a reception usually follows a wedding ceremony but a more casual version. We will be hosting a dinner in a pretty space to eat, drink and hang out with our closest family and friends.</p>
+                    <div class="hero-content flex">
+                        <div>
+                            <h1>PEYTON & KIEREN</h1>
+                            <p class="fancy">We're eloping</p>
 
-  </section>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center footer-content">
-                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Peyton with lots of help from the internet.</p>
+                        </div>
+                        
+                        <div class="center">
+                          <div class="info"><h2>POST ELOPEMENT CELEBRATION</h2>
+                            <p>THE HILLS OF RIVER MAKERS</p>
+                            <p>01.10.2028</p>
+                            <add-to-calendar-button
+  name="PLACEHOLDER: Peyton and Kieren's Post Elopement Celebration"
+  options="'Apple','Google','iCal', 'Microsoft365', 'Outlook.com'""
+  location="The Hills of RiverMakers"
+  startDate="2028-10-01"
+  endDate="2028-10-01"
+  startTime="17:00"
+  endTime="20:00"
+  timeZone="Australia/Brisbane"
+  trigger="click"
+  customCss="/css/add-to-calendar.css"
+  hideCheckmark="true"
+></add-to-calendar-button>
+                          </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="down-arrow floating-arrow"><a aria-label="see more" href="#timeline"><i class="fa fa-angle-down"></i></a></div>
+            </div>
+
+    </section>
+    <section id="details" class="section-padding">
+        <h2>WHAT IS THE PLAN?</h2>
+    <p> We are eloping in Tasmania. Although we will be quietly saying our vows in a small, private ceremony, we want you to know that we are planning a post-elopement celebration to share our joy with all of you! We are beyond excited to celebrate this new chapter of our lives with the people we love and who have supported us along the way.</p>
+    <p> Please add a placeholder for our dinner event on Sunday, October 1st 2028 to your calendar using the add to calendar button in the header. A formal invitation will be sent with more information closer to the date.</p>
+    <h3> WHAT SHOULD I EXPECT?</h3>
+    <p>Similar to how a reception usually follows a wedding ceremony but a more casual version. We will be hosting a dinner in a pretty space to eat, drink and hang out with our closest family and friends.</p>
+    <p> As this will be a casual reception event, we won't be doing speeches or anything special after the dinner. There may be space for dancing and for little groups to spread out within the space. We hope to be able to spend the time after dinner to connect with everyone, catchup and celebrate our most recent milestone.</p>
+    <h2> A NOTE ABOUT THE DATE</h2>
+    <p> The date we have chosen for our post elopement celebration is on a long weekend in Queensland,so please keep this in mind when making your travel and accommodation arrangements when the time comes.</p>
+    <h2>I NEED MORE INFO</h2>
+    <p> If you have pressing questions, you can contact Peyton on 0437 742 751 or on any of the social media you are already connected on. Otherwise, more information will come with the invites.</p>
+      </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center footer-content">
+                    <span class="to-top-wrapper"><a aria-label="back to top" href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>Crafted by Peyton with lots of help from the internet.</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
+    </footer>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/STD.js"></script>
+    <!-- <script src="js/vendor/ouical.js"></script> -->
+     <!-- <script src="js/vendor/add-to-calendar.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 </body>
+
 </html>

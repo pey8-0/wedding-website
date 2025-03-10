@@ -11,11 +11,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Peyton & Kieren</title>
+    <title>Home - Peyton & Kieren</title>
     <meta name="description" content="We're eloping.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Peyton & Kieren">
+    <meta property="og:title" content="Home - Peyton & Kieren">
     <meta property="og:description" content="We're eloping">
     <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
     <meta property="og:type" content="website">
@@ -26,7 +26,6 @@
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
 
-    <script src="./app.js"></script>
     <script>
         // load css files from CDN if local node_modules fail
         function loadCssFromCDN(css) {
@@ -71,6 +70,13 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+<nav class="menu">
+  <ul class="menu-wrapper">
+    <li class="home"><a href="/index.html">Home</a></li>
+    <li class="other"><a href="/save-the-date.html">Save the date</a></li>
+    <!-- <li class="other hide"><a href="/invite.html">Invites</a></li> -->
+  </ul>
+</nav>
     <section>
         <div class="header">
             <div>
@@ -84,21 +90,37 @@
 
                         </div>
                         
-                        <div class="center"><div class="info"><h2>POST ELOPEMENT CELEBRATION</h2>
+                        <div class="center">
+                          <div class="info"><h2>POST ELOPEMENT CELEBRATION</h2>
                             <p>THE HILLS OF RIVER MAKERS</p>
-                            <p>01.10.2028</p></div>
-                        <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">Add placeholder to calendar</a>
+                            <p>01.10.2028</p>
+                            <add-to-calendar-button
+  name="PLACEHOLDER: Peyton and Kieren's Post Elopement Celebration"
+  options="'Apple','Google','iCal', 'Microsoft365', 'Outlook.com'""
+  location="The Hills of RiverMakers"
+  startDate="2028-10-01"
+  endDate="2028-10-01"
+  startTime="17:00"
+  endTime="20:00"
+  timeZone="Australia/Brisbane"
+  trigger="click"
+  customCss="/css/add-to-calendar.css"
+  hideCheckmark="true"
+></add-to-calendar-button>
+                          </div>
+                            
                         </div>
 
                     </div>
 
                 </div>
-                <div class="down-arrow floating-arrow"><a href="#details"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow floating-arrow"><a aria-label="see more" href="#timeline"><i class="fa fa-angle-down"></i></a></div>
             </div>
 
     </section>
     <section id="timeline" class="timeline">
         <h2> P AND K OVER THE YEARS</h2>
+        <p>There is so much more to our story but here are some highlights. We are incredibly grateful for the friends we've made and the ones we've kept along the way, as well as for the unwavering support of our families. We love you all!</p>
         
         <div class="timeline-container">
         
@@ -111,7 +133,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3> The first meeting - 28/03/2015</h3>
               <p> We met at a house party. Peyton and Scott used to work together at Bunnings, and it turned out that Scott is childhood friends with Kieren. Scott brought Kieren along to another work friend's 21st birthday. Peyton and Kieren immediately hit it off. </p>
@@ -131,12 +153,12 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/first-date.jpg" alt="A message from Kieren suggesting Sushi Train for our first date">
+            
        
             <div><h3> The first date - 01/04/2015 </h3>
                 <p> After Peyton sent a friend request to Kieren on Facebook the day after the party, Kieren made the next move to organise a lunch date. We went to Sushi Train at Cairns Central for lunch on a random Wednesday. Peyton was late because she was coming from a shift at Bunnings and thought Kieren had left, but he was running errands while he waited for her. It was only after, that Kieren mentioned he doesn't really like sushi.</p>
               </div>
-           
+              <img src="./img/timeline-photos/first-date.jpg" alt="A message from Kieren suggesting Sushi Train for our first date">
           </div>
              </div>
         <div class="box">
@@ -148,7 +170,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3>We made it official - 28/04/2015</h3>
             <p>Kieren asked Peyton to be his girlfriend after 3 or 4 dates to Ganbaranba and then ice cream at Cold Rock. </p>
@@ -168,14 +190,15 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/family-meet.jpg" alt="Kieren and Peyton at Cazalys.">
+            
             <div>
               <h3> The first meeting of the families - 23/01/2016</h3>
               <p> With an interstate move on the cards, both sides wanted to see what their child had gotten themselves into. A big family dinner was held at Cazaly's in Cairns to introduce the parents and siblings who still lived in Cairns. Both Kieren and Peyton had met the other's families seperately before this.</p>
           </div>
+          <img src="./img/timeline-photos/family-meet.jpg" alt="Kieren and Peyton at Cazalys.">
           </div>
             </div>
-        <div class="box left">
+        <div class="box">
             <svg
             class="marker"
             xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +207,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3>Moved to Canberra together - 30/01/2016</h3>
             <p>Peyton had accepted a job offer in the Federal Government IT Graduate program only two months into dating. Much to everyone's suprise, Kieren said he would join Peyton in moving to Canberra over text a couple months after she told him about her accepting the job.</p>
@@ -194,11 +217,12 @@
             </div>
         <div class="box">
           <div class="content">
-            <img src="./img/timeline-photos/first-apartment.JPG" alt="A sunset from the carpark of our apartment in Canberra">
+            
             <div>
               <h3>First Apartment together 12/02/2016</h3>
           <p> After a week of fulltime searching before Peyton started her new job, we were approved for our first rental apartment together. Number 13 in and old apartment block in Mawson, ACT.</p>
             </div>
+            <img src="./img/timeline-photos/first-apartment.JPG" alt="A sunset from the carpark of our apartment in Canberra">
           </div>
         </div>
         <div class="box"> 
@@ -210,7 +234,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <img>
             <div>
               <h3>The first pet - 07/09/2017</h3>
@@ -231,11 +255,12 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/canada.JPG" alt="Peyton and Kieren at Stanley Park in Vancouver">
+            
             <div>
               <h3>The first overseas holiday together to Canada <br> 22/03/2018 - 16/04/2018 </h3>
             <p>A big trip to go visit Kieren's older brother, Wes and his wife Michelle in Vancouver! We got to hang out with Wes and Michelle, as well as Michelle's family in Vancouver and even spent the Easter long weekend in Seattle.</p>
             </div>
+            <img src="./img/timeline-photos/canada.JPG" alt="Peyton and Kieren at Stanley Park in Vancouver">
           </div>
             
         </div>
@@ -248,7 +273,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3> Moved to Brisbane 01/12/2018</h3>
               <p> After almost 3 years in Canberra, the cold was too much and we made to move back to warmer climates. After a stupidly long drive up from Canberra, we moved into our second apartment together in Morningside.</p>  
@@ -267,12 +292,13 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/house.JPG" alt="Our house with the sold sign out the front and Peyton's blue car in the driveway.">
+            
           
             <div>
               <h3>We bought a house! 02/10/2020</h3>
               <p> To add to the chaos of everything that 2020 was, Peyton's parents helped us buy a house of our own. After dealing with way too many real estate agents, We bought a house in the Brisbane bayside suburb of Brisbane.</p>
             </div>
+            <img src="./img/timeline-photos/house.JPG" alt="Our house with the sold sign out the front and Peyton's blue car in the driveway.">
           </div>
             
         </div>
@@ -285,7 +311,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3>The pet gang expands rapidly<br>Louie - 10/10/2020<br>Wilbur - 21/02/2022<br>River - 08/06/2022 </h3>
               <p> After buying our house, we went into full pet crazy mode. Gaining another 3 pets in a little over 1.5 years. Still not sure if it was a good idea. </p>
@@ -313,11 +339,12 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/hike.jpg" alt="Peyton and Kieren at the end marked of the Three Capes Track.">
+            
             <div>
               <h3>The first multi-day hike together - September 2023</h3>
               <p>After completing Thoresbourne Trail with some friends earlier in the year, Peyton begged Kieren to do another one with her. After much investigation, she found the Three Capes Track that starts from Port Arthur, Tasmania that had cabins every night which finally got Kieren onboard. ADD SOME DETAILS></p>
             </div>
+            <img src="./img/timeline-photos/hike.jpg" alt="Peyton and Kieren at the end marker of the Three Capes Track.">
           </div>
             </div>
         <div class="box">
@@ -329,7 +356,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3>He put a ring on it - 28/09/2024</h3>
               <p>13 months after they agreed to get engaged, on a trip to the Toowoomba Flower Festival, Kieren pulled Peyton into a quiet garden area and proposed with a little speech, a family hierloom ring and a cheeky smile.</p>
@@ -352,12 +379,13 @@
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
           <div class="content">
-            <img src="./img/timeline-photos/i-do.JPG" alt="Kieren spinning Peyton around in a field">
+            
             <div>
               
               <h3>They say 'I Do'- September 2028</h3>
               <p>Peyton and Kieren are eloping in Cradle Mountain, Tasmania in an intimate ceremony, just the two of them. The actual date is top secret, because we don't trust some of y'all not to rock up. Maybe we will tell you at the Post Elopement Celebration.</p>
             </div>
+            <img src="./img/timeline-photos/i-do.JPG" alt="Kieren spinning Peyton around in a field">
           </div>
             
         </div>
@@ -370,7 +398,7 @@
           >
             <circle cx="20" cy="20" r="20"></circle>
           </svg>
-          <div class="content">
+          <div class="content right">
             <div>
               <h3>Post Elopement Celebration - 01/10/2028</h3>
               <p>We cannot wait to celebrate with you all! </p>
@@ -386,7 +414,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center footer-content">
-                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <span class="to-top-wrapper"><a aria-label="back to top" href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
                     <p>Crafted by Peyton with lots of help from the internet.</p>
                 </div>
             </div>
@@ -399,7 +427,10 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script src="js/vendor/ouical.js"></script>
+    <script src="js/STD.js"></script>
+    <!-- <script src="js/vendor/ouical.js"></script> -->
+     <!-- <script src="js/vendor/add-to-calendar.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 </body>
 
 </html>

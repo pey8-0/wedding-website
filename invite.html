@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Peyton & Kieren</title>
+    <title>You're invited - Peyton & Kieren</title>
     <meta name="description" content="We're eloping.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
@@ -70,6 +70,13 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+<nav class="menu">
+    <ul class="menu-wrapper">
+      <li class="home"><a href="/index.html">Home</a></li>
+      <li class="other"><a href="/save-the-date.html">Save the date</a></li>
+      <!-- <li class="other hide"><a href="/invite.html">Invites</a></li> -->
+    </ul>
+  </nav>
     <section>
         <div class="header">
             <div>
@@ -92,7 +99,7 @@
                     </div>
 
                 </div>
-                <div class="down-arrow floating-arrow"><a href="#details"><i class="fa fa-angle-down"></i></a></div>
+                <div class="down-arrow floating-arrow"><a aria-label="see more" href="#details"><i class="fa fa-angle-down"></i></a></div>
             </div>
 
     </section>
@@ -120,7 +127,7 @@
         <p> The closest chain hotels are:</p>
         <p>There are also plenty of AirBnBs around (DOUBLE CHECK THIS)</p>
         <div class="accordion">
-            <h2>Q&A</h2>
+            <h2>MORE QUESTIONS</h2>
             <button class="btn accordion-button collapsed" aria-expanded="false" data-bs-target="#collapseOne">
                 <h3>How do I know who is invited?</h3>
             </button>
@@ -186,14 +193,15 @@
                         <div class="spinnerWrapper">
 
                             <div>
+                                <p>Required fields are marked with *.</p>
                                 <p>Enter the name of anyone in your family group who has been invted to show the rest of
                                     the group.</p>
                                 <div class="form-input-group">
 
                                     <label for="first">First Name*</label>
-                                    <input id="first" name="firstName" class="" required>
+                                    <input autocomplete="given-name" id="first" name="firstName" class="" required>
                                     <label for="last">Last Name*</label>
-                                    <input id="last" name="lastName" class="" required>
+                                    <input autocomplete="family-name" id="last" name="lastName" class="" required>
                                 </div>
 
                                 <div id="findParty" class="alert alert-danger hide" role="alert"><strong>Oops!</strong>
@@ -242,7 +250,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center footer-content">
-                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <span class="to-top-wrapper"><a aria-label="back to top" href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
                     <p>Crafted by Peyton with lots of help from the internet.</p>
                 </div>
             </div>
