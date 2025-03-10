@@ -44,6 +44,14 @@ p {
   color: $txt-primary;
   padding-bottom: 20px;
 }
+a{
+  font-size: $font-size-p;
+  line-height: $base-line-height;
+  color: $txt-primary;
+
+  font-family: "Vollkorn";
+
+}
 
 h1 {
   font-size: $font-size-h1;
@@ -51,7 +59,7 @@ h1 {
 
 h2 {
   font-size: $font-size-h2;
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
 }
 
 h3 {
@@ -60,11 +68,13 @@ h3 {
 
   text-transform: uppercase;
   line-height: $base-line-height;
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
 }
 
 h4 {
   font-size: $font-size-h4;
+  line-height: $base-line-height;
+  font-family: "Vollkorn";
 }
 
 h5 {

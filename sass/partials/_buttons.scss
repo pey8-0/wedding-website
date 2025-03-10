@@ -10,6 +10,7 @@
 	border-radius: 40px;
 	display: inline-block;
 	text-transform: uppercase;
+	--bs-btn-line-height: 1;
 }
 .btn:hover, .btn:focus {
 	color: $white-color;
