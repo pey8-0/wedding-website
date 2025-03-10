@@ -3,14 +3,21 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 //Fancy fonts
-@import url('https://fonts.cdnfonts.com/css/andellia-davilton');
-@import url(/fonts/DearPonyPersonalUse-Medium.otf);
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+@import url('/fonts/Vollkorn-VariableFont_wght.ttf');
 // Imports
 //@import "compass";
 @import "partials/typography";
 @import "partials/buttons";
 @import "partials/colors";
 @import "partials/layout";
+
+// @font-face {
+//   font-family: 'BrittanySignature';
+//   src: url('fonts/BrittanySignature-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 /* ==========================================================================
 Global Styles
@@ -36,8 +43,7 @@ a {
   transition-property: color, border-color, background-color;
 }
 a:hover, a:focus {
-  color: $accent-color-hover;
-  text-decoration: none;
+  text-decoration:none;
 }
 body {
   font-family: $sans-serif;
@@ -58,8 +64,9 @@ ul li {
 }
 
 .section-padding {
-  padding: $section-padding;
+  padding: 40px 30px;
   background-color: #4F6757;
+  position: relative;
 }
 .section-border {
   border-bottom: 1px solid $keyline-color;
@@ -107,7 +114,7 @@ ul li {
   border-radius: 4px;
 }
 h1{
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
   font-size: 2em;
   color:#FAF3E9; 
 }
@@ -134,7 +141,7 @@ Animations
 .floating-arrow {
   animation-name: floating-arrow;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
 @keyframes floating-arrow {
@@ -167,77 +174,46 @@ Waypoinsts
 /* ==========================================================================
 Navigation
 ========================================================================== */
-.header-nav.open {
-  visibility: visible;
-  opacity: 0.9;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.nav-toggle {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  z-index: 999999;
-  padding: 10px 35px 16px 0;
-  cursor: pointer
-}
-.nav-toggle:focus {
-  outline: none
-}
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 35px;
-  height: 3px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  border-radius: 1px;
-  background: #fff;
-  cursor: pointer
-}
-.nav-toggle span:before {
-  top: -10px
-}
-.nav-toggle span:after {
-  bottom: -10px
-}
-.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out
-}
-.nav-toggle.active span {
-  background-color: transparent
-}
-.nav-toggle.active span:before, .nav-toggle.active span:after {
-  top: 0
-}
-.nav-toggle.active span:before {
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg)
-}
-.nav-toggle.active span:after {
-  top: 10px;
-  -moz-transform: translatey(-10px) rotate(-45deg);
-  -ms-transform: translatey(-10px) rotate(-45deg);
-  -o-transform: translatey(-10px) rotate(-45deg);
-  -webkit-transform: translatey(-10px) rotate(-45deg);
-  transform: translatey(-10px) rotate(-45deg)
-}
-.navicon {
-  position: absolute;
-  height: 26px;
-  right: 10px;
-  top: 48px;
-  visibility: hidden;
-  transition: all 300ms ease-in-out;
+.menu{
+  background-color: #4F6757;//add var
+  height: 10vh;
+  border-bottom: 2px #FAF3E9 solid; //add var
+  
+  
+
 }
 
+.menu-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 100%;
+}
+
+.home{
+  flex-grow: 3;
+  justify-self: center;
+}
+
+.other{
+  flex-grow: 1;
+}
+
+.menu-wrapper a{
+  text-decoration: none;
+  color:#FAF3E9;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.menu-wrapper a:focus{
+  text-decoration: underline;
+  
+}
+.hide{
+  display:none; //you can do this better like below. and change in js.
+}
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -254,7 +230,7 @@ Hero
   .rsvp-btn {
     background-color:#DE6C7F;
     color: #000;
-    font-family: 'Dear Pony Medium' ;
+    font-family: 'Vollkorn' ;
     
   }
   .center{
@@ -273,6 +249,7 @@ Hero
     display:flex;
     flex-direction:column;
     justify-content: center;
+    align-items: center;
     
   }
 
@@ -293,7 +270,11 @@ Hero
   }
   .down-arrow a {
     color: $txt-light;
+    font-size:30px;
   
+  }
+  .down-arrow a:focus{
+    border:#DE6C7F solid 2px;
   }
   h1 {
     margin-bottom: 40px;
@@ -313,10 +294,9 @@ Hero
   }
 
 .header{
-  height: 100vh;
+  height: 90vh;
   background: #4F6757;
   display:flex;
-  overflow:hidden;
 }
 .header-img {
   width: 60%;  
@@ -329,9 +309,9 @@ Hero
   background-repeat: no-repeat;
 }
 .fancy{
-  font-family: 'Andellia Davilton', sans-serif;
+  font-family: 'Brittany Signature', cursive;
   color: #FAF3E9;
-  font-size:4em;
+  font-size:3em;
   transform: rotate(-8deg);  
     transform-origin: center;
   text-align: center;
@@ -345,7 +325,6 @@ Hero
 }
 
 .down-arrow {
-  color: #fff;
   font-size: 30px;
   position: absolute;
   bottom: 30px;
@@ -486,6 +465,7 @@ RSVP form
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
+      margin-top:20px;
     }
     .form-input-group {
       width: 100%;
@@ -501,6 +481,7 @@ RSVP form
         flex-direction: row; 
         gap: 10px; 
         align-items: center; 
+      padding-top: 30px;
 
     }
       input, select {
@@ -511,6 +492,7 @@ RSVP form
         border-radius: 6px;
         border: none;
         flex-grow:1;
+        margin-bottom:20px;
       }
       input::-webkit-input-placeholder {
         color: $form-placeholder;
@@ -526,6 +508,11 @@ RSVP form
       }
       label {
         color: $txt-primary;
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: 0px;
+        padding-bottom:5px;
       }
     }
     .partyDetails {
@@ -587,37 +574,37 @@ Footer
 footer {
   background: #4F6757; //add a variable for this!!!!
   .footer-content {
-    border-top: 1px solid $keyline-color;
+    border-top: 1px solid #FAF3E9;
     padding-bottom: 20px;
+    margin-top:40px;
     
   }
   .to-top-wrapper {
     font-size: 30px;
     display: block;
     cursor: pointer;
-    margin: -25px auto 50px;
+    margin: -25px auto 10px;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 1px solid $keyline-color;
-    background: #4F6757;
+    border: 1px solid #FAF3E9;
+    background: #FAF3E9;
   }
   .to-top-wrapper .to-top {
     display: block;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
   }
   .to-top-wrapper .to-top:hover {
     margin-top: -5px;
   }
-  span.fa-heart {
-    color: #ff415c;
-    font-size: 18px;
-    margin: 0 2px;
+ 
+  .to-top{
+    font-size: 30px;
   }
+  .to-top:focus{
+    border:#DE6C7F solid 2px;
+  }
+  
+
 }
 
 /* ==========================================================================
@@ -649,7 +636,7 @@ Timeline
 
 .timeline {
   position: relative;
-  padding-top: 20px;
+  padding-top: 40px;
   background-color: #4F6757; //add a var!
 }
 
@@ -659,13 +646,8 @@ Timeline
   position: relative;
 }
 
-.left{
-  left:0;
-}
 
-.right{
-  left: 50%;
-}
+
 
 .timeline-container::after{
   content: '';
@@ -673,15 +655,17 @@ Timeline
   width: 6px;
   height: 99%;
   background: #FAF3E9;
-  top:60px;
+  top:150px;
   left: 50%;
   margin-left: -3px;
+  display:flex;
+  justify-content: center;
 
 }
 
 .marker{
   position:absolute;
-  right:47.5%;
+  right:48.5%;
   top:15px;
   z-index:10;
   fill:#FAF3E9;
@@ -691,8 +675,12 @@ Timeline
 .content{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.content.right {
+  flex-direction: row-reverse; 
 }
 
 
@@ -704,10 +692,18 @@ Timeline
 
 .content div{
   padding: 20px;
-  max-width: 400px;
+  max-width: 50%;
 }
 
 .pets{
   display:flex;
   flex-direction: column;
+}
+
+.timeline h2{
+  padding-left: 30px;
+}
+
+.timeline p {
+  padding: 0px 30px;
 }

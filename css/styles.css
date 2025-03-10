@@ -1,8 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
 @import "https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic";
 @import "https://fonts.googleapis.com/css?family=Nunito:400,300,700";
-@import "https://fonts.cdnfonts.com/css/andellia-davilton";
-@import "/fonts/DearPonyPersonalUse-Medium.otf";
+/* @import "/fonts/BrittanySignature.ttf"; */
+@import url('https://fonts.cdnfonts.com/css/brittany-signature-script');
+
+@import "/fonts/Vollkorn-VariableFont_wght.ttf";
 p {
   font-size: 15px;
   line-height: 29px;
@@ -14,14 +16,14 @@ h1 {
 }
 h2 {
   font-size: 25px;
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
 }
 h3 {
   color: #faf3e9;
   font-size: 20px;
   text-transform: uppercase;
   line-height: 29px;
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
 }
 h4 {
   font-size: 18px;
@@ -188,7 +190,7 @@ ul li {
   border-radius: 4px;
 }
 h1 {
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
   font-size: 2em;
   color: #faf3e9;
 }
@@ -340,7 +342,7 @@ h1 {
 .rsvp-btn {
   background-color: #de6c7f;
   color: #000;
-  font-family: "Dear Pony Medium";
+  font-family: "Vollkorn";
 }
 .center {
   display: flex;
@@ -406,7 +408,7 @@ p.intro {
   background-repeat: no-repeat;
 }
 .fancy {
-  font-family: "Andellia Davilton", sans-serif;
+  font-family: "Brittany Signature Regular";
   color: #faf3e9;
   font-size: 4em;
   transform: rotate(-8deg);
